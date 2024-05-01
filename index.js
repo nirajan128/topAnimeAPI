@@ -9,7 +9,7 @@ dotenv.config();
 
 //2.Set up express app
 const app = express();
-const PORT =  3000;
+const PORT =  process.env.PORT || 3000;
 
 //4.set up pg database, and connect
 let db;
