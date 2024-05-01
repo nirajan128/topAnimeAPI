@@ -1,6 +1,7 @@
 import express from "express";
 import pg from "pg";
 import dotenv from "dotenv";
+import cors from"cors";
 
 
 //1.Get the rnvironment variables from .env file
@@ -22,6 +23,9 @@ await db.connect();
 
 //5.Middleware to parse JSON bodies
 app.use(express.json())
+
+// Add cors middleware
+app.use(cors());
 
 //6.Define routes
 //get all anime
