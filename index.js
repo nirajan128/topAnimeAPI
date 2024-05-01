@@ -12,14 +12,27 @@ const app = express();
 const PORT =  3000;
 
 //4.set up pg database, and connect
-const db = new pg.Client({
-    user: process.env.PG_USER,
-    host: process.env.PG_HOST,
-    database: process.env.PG_DATABASE,
-    password: process.env.PG_PASSWORD,
-    port: process.env.PG_PORT,
-   })    
-await db.connect();
+let db;
+if (process.env.DATABASE_URL) {
+    db = new pg.Client({
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+            rejectUnauthorized: false
+        }
+    });
+} else {
+    db = new pg.Client({
+        user: process.env.PG_USER,
+        host: process.env.PG_HOST,
+        database: process.env.PG_DATABASE,
+        password: process.env.PG_PASSWORD,
+        port: process.env.PG_PORT
+    });
+}
+// Connect to the database
+db.connect()
+    .then(() => console.log('Connected to the database'))
+    .catch(err => console.error('Error connecting to the database', err));
 
 //5.Middleware to parse JSON bodies
 app.use(express.json())
