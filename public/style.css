@@ -10,14 +10,16 @@ $base-color: #64c6c4; */
 .oswald-heading {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
+    font-size: 37px;
   }
 
   .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 17px;
   }
 
 .navigation{
@@ -52,24 +54,48 @@ $base-color: #64c6c4; */
     border: 3px solid #212245;
     animation: rotateRect 5s linear infinite alternate;
     box-shadow: 0px -4px 42px -10px rgba(82,78,82,1);
+   
     
 }
 .r2{
     border: 3px solid #64c6c4;
     top: -1em;
     animation: rotateRect 5.2s linear infinite alternate;
+    box-shadow: 0px -4px 42px -10px rgba(82,78,82,1);
 }
 
 .r3{
     border: 3px solid #212245 ;
     top: -2em;
-   
     animation: rotateRect 5.3s linear infinite alternate;
 }
 
 .heading{
     color: #212245;
 }
+
+/* button */
+.primary{
+  border: 1px solid #212245 !important;
+  color: #212245 !important;
+  transition: all 0.5s ease !important;
+}
+.primary:hover{
+    background-color: #212245 !important;
+    color: white !important;
+}
+
+.secondary{
+  background-color:#64c6c4 !important;
+  color: #212245 !important;
+  transition: opacity 0.5s ease !important;
+}
+.secondary:hover{
+    opacity: 0.8 !important;
+}
+
+
+
 
 /* animations */
 @keyframes rotateRect {
@@ -81,6 +107,28 @@ $base-color: #64c6c4; */
     }
     100% {
         transform: perspective(300px) rotateX(68deg) rotateZ(360deg);
+    }
+}
+
+/* media queries */
+@media (max-width: 576px) {
+    .box1{
+        height: 150px;
+    }
+
+    .heading{
+        padding: 1em;
+        margin-top: 1em;
+    }
+
+    .logo{
+        width: 70%;
+    }
+    .oswald-heading{
+        font-size: 2em;
+    }
+    .roboto-regular{
+        font-size: 1em;
     }
 }
 
