@@ -20,11 +20,17 @@ const db = new pg.Client({
    })    
 await db.connect();
 
-//5.Middleware to parse JSON bodies
+//5.Middleware
+//parse JSON bodies
 app.use(express.json())
-
 // Add cors middleware
 app.use(cors());
+app.use(express.static("public"));
+
+//7. reroute to index.ejs
+app.get("/", async(req,res) => {
+    res.render("index.ejs")
+})
 
 //6.Define routes
 //get all anime
