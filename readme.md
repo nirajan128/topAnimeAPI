@@ -48,7 +48,7 @@ Here are some examples of how to use the API:
  
 ## Documentation
 
-For more detailed information about the API, including response formats and error handling, please refer to the [API Documentation](`https://topanime-api-050cfa577b7c.herokuapp.com/`).
+For more detailed information about the API, including response formats and error handling, please refer to the [API Documentation] `https://topanime-api-050cfa577b7c.herokuapp.com/`.
 
 ## Contributing
 
