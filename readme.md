@@ -32,23 +32,23 @@ The Top Anime API is a RESTful API built using Node.js, popular npm packages, an
 
 ## Getting Started
 
-To use the Top Anime API, you can make HTTP GET requests to the appropriate endpoints. The base URL for the API is `https://topanime-api-050cfa577b7c.herokuapp.com/`.
+To use the Top Anime API, you can make HTTP GET requests to the appropriate endpoints. The base URL for the API is `https://topanimeapi.onrender.com`.
 
 Here are some examples of how to use the API:
 
 - **Get All Anime**:
- `https://topanime-api-050cfa577b7c.herokuapp.com/anime`
+ `https://topanimeapi.onrender.com/anime`
 
  - **Get Random Anime**:
- `https://topanime-api-050cfa577b7c.herokuapp.com/anime/random`
+ `https://topanimeapi.onrender.com/anime/random`
 
  - **Search Anime**:
- `https://top-anime-api.herokuapp.com/search?q=gintama`
+ `https://topanimeapi.onrender.com/search?q=gintama`
 
  
 ## Documentation
 
-For more detailed information about the API, including response formats and error handling, please refer to the [API Documentation] `https://topanime-api-050cfa577b7c.herokuapp.com/`.
+For more detailed information about the API, including response formats and error handling, please refer to the [API Documentation] `https://topanimeapi.onrender.com`.
 
 ## Contributing
 
