@@ -1,112 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>topAnimeAPI</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
     <nav class="navbar navigation justify-content-center">
-          <div class="container">
-              <img src="/logo-transparent-png.png" alt="topAnimeLogo" class="logo">
+      <div class="container">
+        <img src="/logo-transparent-png.png" alt="topAnimeLogo" class="logo" />
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 order-md-1 order-2 box1 align-content-center">
+            <div
+              class="components d-flex justify-content-center design flex-column"
+            >
+              <div class="rect r1"></div>
+              <div class="rect r2"></div>
+              <div class="rect r3"></div>
+            </div>
           </div>
-     </nav>
-     <main >
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 order-md-1 order-2 box1 align-content-center">
-                    <div class="components d-flex justify-content-center design flex-column">
-                        <div class="rect r1"></div>
-                        <div class="rect r2"></div>
-                        <div class="rect r3"></div>
-                    </div>
-                </div>
-                <div class="col-md-6 order-md-2 order-1 align-self-center p-1">
-                    <div class="heading text-center text-md-left">
-                        <h1 class="oswald-heading">TopAnimeApi</h1>
-                        <p class="p mt-4 roboto-regular">TopAnimeApi is an open-source REST API for the <em><strong>List of top ranking anime and their details</strong></em>.
-                            TopAnimeAPI is your one-stop destination for accessing comprehensive rankings and detailed information on the top anime series. <br> Whether you're an avid anime fan, a developer working on a personal project,TopAnimeAPI offers the tools and resources you need to explore, discover, and utilize anime data in innovative ways.
-                        </p>
-                    </div>
-                    <div class="d-flex justify-content-start mt-3 p-1">
-                        <a href="https://github.com/nirajan128/topAnimeAPI" target="_blank"><button class="btn primary">Learn More</button></a>
-                        <a href="#get-started"><button class="btn secondary ml-2">Get Started</button></a>
-                    </div>
-                </div>
+          <div class="col-md-6 order-md-2 order-1 align-self-center p-1">
+            <div class="heading text-center text-md-left">
+              <h1 class="oswald-heading">TopAnimeApi</h1>
+              <p class="p mt-4 roboto-regular">
+                TopAnimeApi is an open-source REST API for the
+                <em
+                  ><strong
+                    >List of top ranking anime and their details</strong
+                  ></em
+                >. TopAnimeAPI is your one-stop destination for accessing
+                comprehensive rankings and detailed information on the top anime
+                series. <br />
+                Whether you're an avid anime fan, a developer working on a
+                personal project,TopAnimeAPI offers the tools and resources you
+                need to explore, discover, and utilize anime data in innovative
+                ways.
+              </p>
             </div>
+            <div class="d-flex justify-content-start mt-3 p-1">
+              <a
+                href="https://github.com/nirajan128/topAnimeAPI"
+                target="_blank"
+                ><button class="btn primary">Learn More</button></a
+              >
+              <a href="#get-started"
+                ><button class="btn secondary ml-2">Get Started</button></a
+              >
+            </div>
+          </div>
         </div>
-        <div class="conatiner2 p-3 mt-5 mr-5  ml-5" id="get-started">
-            <div class="info">
-                <div class="info-heading">
-                    <h2 class="oswald-heading">Documentations</h2>
-                </div>
-                <div class="info-content roboto-regular">
-                    <p>A free,fast, and clean REST API which thats easy to use.The API returns the data in <b>JSON format</b> </p>
-                    <p>Base URL: <a href="https://topanime-api-050cfa577b7c.herokuapp.com/">https://topanime-api-050cfa577b7c.herokuapp.com/</a></p>
-                </div>
-            </div>
-            <div class="table-content table-responsive">
-                <table class=" table table-light table-striped table-hover table-extra the-table overflow-hidden">
-                    <thead>
-                     <tr>
-                       <th scope="col">Method</th>
-                       <th scope="col">URL</th>
-                       <th scope="col">Returns</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">GET</th>
-                        <td>baseURL/anime</td>
-                        <td>All anime details in the database</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">GET</th>
-                        <td>baseURL/anime/random</td>
-                        <td>Random anime each time</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">GET</th>
-                        <td>baseURL/anime/search?q='animename'</td>
-                        <td>searched anime which is eneterd in query parameter <br>
-                            example: baserURL/anime/search/?q=gintama returns all anime with name gintama
-                        </td>
-                        
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-        </div>
-     </main>
-     <footer class=" p-3 mt-1 mr-5 ml-5" id="learn-more">
-        <div class="contact d-flex flex-column flex-sm-row">
-            <div class="c_content p-3">
-                <p class="roboto-regular">This API is something I built using Node.js, npm packages, and PostgreSQL. ,<br>The data is hosted on <a href="https://render.com/">Render</a>
-                and the app it self is hosted on <a href="https://heroku.com">Heroku</a>.</p>
-                <p class="roboto-regular">For further enquires mail me at <a href="mailTo:nirajanshrestha672@gmail.com"><em>nirajanshrestha672@gmail.com</em></a></p>
-            </div>
-            <div class="c_icons flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-                <div class="c_heading ">
-                    <h2 class="oswald-heading">Connect</h2>
-                </div>
-                <div class="c_logo">
-                   <a href="https://github.com/nirajan128" target="_blank"><img src="/github.png" alt="github" class="f_animation"></a>
-                   <a href="www.linkedin.com/in/nirajan-shrestha-391380233" target="_blank"><img src="/linked-in.png" alt="linkedin" class="f_animation"></a>
-                </div>
-                
-                
-            </div>
-        </div>
-        <div class="copyright border-top mt-5 text-center">
-            <p class="roboto-regular p-2">&copy; 2024 TopAnimeAPI. All rights reserved. <br>
-                <a href="www.linkedin.com/in/nirajan-shrestha-391380233">&copy; NirajanShrestha.</a>
+      </div>
+      <div class="conatiner2 p-3 mt-5 mr-5 ml-5" id="get-started">
+        <div class="info">
+          <div class="info-heading">
+            <h2 class="oswald-heading">Documentations</h2>
+          </div>
+          <div class="info-content roboto-regular">
+            <p>
+              A free,fast, and clean REST API which thats easy to use.The API
+              returns the data in <b>JSON format</b>
             </p>
-            
+            <p>
+              Base URL:
+              <a href="https://topanimeapi.onrender.com/"
+                >https://topanimeapi.onrender.com/</a
+              >
+            </p>
+          </div>
         </div>
-     </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
-</body>
+        <div class="table-content table-responsive">
+          <table
+            class="table table-light table-striped table-hover table-extra the-table overflow-hidden"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Method</th>
+                <th scope="col">URL</th>
+                <th scope="col">Returns</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">GET</th>
+                <td>baseURL/anime</td>
+                <td>All anime details in the database</td>
+              </tr>
+              <tr>
+                <th scope="row">GET</th>
+                <td>baseURL/anime/random</td>
+                <td>Random anime each time</td>
+              </tr>
+              <tr>
+                <th scope="row">GET</th>
+                <td>baseURL/anime/search?q='animename'</td>
+                <td>
+                  searched anime which is eneterd in query parameter <br />
+                  example: baserURL/anime/search/?q=gintama returns all anime
+                  with name gintama
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer class="p-3 mt-1 mr-5 ml-5" id="learn-more">
+      <div class="contact d-flex flex-column flex-sm-row">
+        <div class="c_content p-3">
+          <p class="roboto-regular">
+            This API is something I built using Node.js, npm packages, and
+            PostgreSQL. ,<br />The data is hosted on
+            <a href="https://supabase.com/">Supabase</a> and the app it self is
+            hosted on <a href="https://render.com">Render</a>.
+          </p>
+          <p class="roboto-regular">
+            For further enquires mail me at
+            <a href="mailTo:nirajanshrestha672@gmail.com"
+              ><em>nirajanshrestha672@gmail.com</em></a
+            >
+          </p>
+        </div>
+        <div
+          class="c_icons flex-grow-1 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="c_heading">
+            <h2 class="oswald-heading">Connect</h2>
+          </div>
+          <div class="c_logo">
+            <a href="https://github.com/nirajan128" target="_blank"
+              ><img src="/github.png" alt="github" class="f_animation"
+            /></a>
+            <a
+              href="www.linkedin.com/in/nirajan-shrestha-391380233"
+              target="_blank"
+              ><img src="/linked-in.png" alt="linkedin" class="f_animation"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright border-top mt-5 text-center">
+        <p class="roboto-regular p-2">
+          &copy; 2024 TopAnimeAPI. All rights reserved. <br />
+          <a href="www.linkedin.com/in/nirajan-shrestha-391380233"
+            >&copy; NirajanShrestha.</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
